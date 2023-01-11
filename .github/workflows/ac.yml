@@ -14,6 +14,7 @@ jobs:
       - run: ls -a ../
       - run: ls -a ../../_actions/actions/checkout/
       # This step checks out a copy of your repository.
+      - uses: actions/checkout@v2
       - name: hehe, again echoooo
         run: echo "HeHe"
       - name: placeee
@@ -22,6 +23,5 @@ jobs:
         run: ls -a
       - run: ls -a ../
       - run: ls -a ../../_actions/actions/checkout/
-      - uses: actions/checkout@v2
       # This step references the directory that contains the action.
       - uses: ./.github/actions/hello/
