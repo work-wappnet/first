@@ -5,7 +5,7 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
-      - run: service apache2 status
+      - run: sudo service apache2 status
       - run: apt install apache2 -y
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
