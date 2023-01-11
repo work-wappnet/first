@@ -1,5 +1,5 @@
 name: running from ac.yml file
-runs-name: running dug dug dug dug
+run-name: running dug dug dug dug
 on: [push]
 jobs:
   build:
