@@ -4,5 +4,6 @@ on: [push]
 jobs:
   build:
     runs-on: self-hosted
-      - run: echo hehe>hell.txt
+    steps:
+      - run: echo 'hehe' > hell.txt
       - run: echo "kyu chonk gaye naaa!!!!"
