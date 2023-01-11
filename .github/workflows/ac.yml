@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: appleboy/ssh-action@master
         with:
-          host: 13.127.191.140
+          host: ec2-13-127-191-140.ap-south-1.compute.amazonaws.com
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
 
