@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: appleboy/ssh-action@master
         with:
-          host: 15.206.70.247
-          key: ${{ secrets.PRIVATE_KEY }}
+          host: 13.127.191.140
           username: ubuntu
+          key: ${{ secrets.PRIVATE_KEY }}
           script: echo hello world > hello.txt
