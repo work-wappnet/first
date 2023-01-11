@@ -3,7 +3,6 @@ run-name: connecting to AWS !!!
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - run: export SECRET=hehe
-      - run: echo $SECRET
+    runs-on: self-hosted
+      - run: echo hehe>hell.txt
+      - run: echo "kyu chonk gaye naaa!!!!"
