@@ -1,27 +1,16 @@
 name: running from ac.yml file
-run-name: running dug dug dug dug
+run-name: connecting to AWS !!!
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: hehe, again echoooo
-        run: echo "HeHe"
-      - name: placeee
-        run: pwd
-      - name: ls 
-        run: ls -a
-      - run: ls -a ../
-      - run: ls -a ../../_actions/actions/checkout/
-      # This step checks out a copy of your repository.
       - uses: actions/checkout@v2
-      - name: hehe, again echoooo
-        run: echo "HeHe"
-      - name: placeee
-        run: pwd
-      - name: ls
-        run: ls -a
-      - run: ls -a ../
-      - run: ls -a ../../_actions/actions/checkout/
-      # This step references the directory that contains the action.
-      - uses: ./.github/actions/hello/
+      - uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: 15.206.70.247
+          key: ${{ secrets.PRIVATE_KEY }}
+          username: ubuntu
+
+          script: |
+            echo "HAMCKINGGG bamxiii" > rem.txt
