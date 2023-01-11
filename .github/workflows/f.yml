@@ -5,6 +5,7 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo systemctl status apache2
       - run: sudo apt install apache2 -y
       - run: sudo systemctl start apache2
       - run: sudo systemctl status apache2
