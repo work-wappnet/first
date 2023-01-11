@@ -1,3 +1,5 @@
+name: inside-avtion-hello!!
+run-name: aise hi
 jobs:
   my_first_job_from_action:
     steps:
