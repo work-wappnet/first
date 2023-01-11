@@ -1,0 +1,20 @@
+name: pehla action
+run-name: ${{ github.actor }} is doing actionsss !!
+on: [push]
+jobs:
+  checkingggg-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: running echo from ws only
+        run: echo "hehe"
+      - name: printing working directory
+        run: pwd
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 14 # optional
