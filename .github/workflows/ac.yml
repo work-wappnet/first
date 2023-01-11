@@ -6,9 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Deploy in EC2
-        run: |
-          echo ${{ secrets.AWS_PRIVATE_KEY  }} > private_key && chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key ubuntu@52.66.27.174
+      - name: copy private key
+        run: echo ${{ secrets.AWS_PRIVATE_KEY  }} > private_key && chmod 600 private_key
+      - run: cat private_key
           
 
