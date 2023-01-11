@@ -5,6 +5,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - env:
-            SUPER_SECRET: "LMAOOO"
-      - run: echo $SUPER_SECRET
+      - run: export SECRET=hehe
+      - run: echo $SECRET
