@@ -5,10 +5,10 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
-      - name: running echo from ws only
-        run: echo "hehe"
       - name: printing working directory
         run: pwd
+      - name: running echo
+        run: echo "HeHe"
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
