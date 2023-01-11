@@ -4,6 +4,7 @@ on: [push]
 jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
+    steps:
       - run: docker ps 
       - run: docker images
       - run: docker volume ls
