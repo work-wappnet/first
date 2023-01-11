@@ -1,7 +1,0 @@
-jobs:
-  my_first_job_from_action:
-    steps:
-      - name: from action hello
-        run: echo "hello"
-      - name: My first step
-        uses: actions/setup-node@v3
