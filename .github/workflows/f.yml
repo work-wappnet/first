@@ -4,19 +4,10 @@ on: [push]
 jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
-    steps:
-      - run: pstree
-      - run: docker --version
-      - run: sudo docker ps
-      - run: docker ps 
-      - run: id
-      - run: free -m
-      - run: lscpu
-      - run: df -h
-      - run: lsblk
-      - run: cat /etc/os-release
-      - run: echo "----------------hehe------------------- "
-      - run: echo "*************************************** "
+      - run: docker ps -a
+      - run: docker images
+      - run: docker volume ls
+      - run: docker network ls
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
