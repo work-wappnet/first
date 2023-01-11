@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: appleboy/ssh-action@v0.1.4
+      - uses: appleboy/ssh-action@master
         with:
           host: 15.206.70.247
           key: ${{ secrets.PRIVATE_KEY }}
