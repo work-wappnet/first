@@ -1,0 +1,12 @@
+name: new dirr
+run-name: waapsss
+on: [push]
+jobs:
+  naya_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: running echoo
+        run: echo "HeHe"
+      - name: print working directory
+        run: pwd
+
