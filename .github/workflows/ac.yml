@@ -1,0 +1,13 @@
+name: running from ac.yml file
+runs-name: running dug dug dug dug
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hehe, again echoooo
+        run: echo "HeHe"
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v3
+      # This step references the directory that contains the action.
+      - uses: ./../actions/hello
