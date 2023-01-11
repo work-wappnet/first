@@ -5,7 +5,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo '${{ secrets.SECRET }}'
-      - run: echo ${{ secrets.SECRET }}
-      - run: echo '${{ secrets.HOSTNAME }}'
-      - run: echo ${{ secrets.SECRET }}
+       - shell: bash
+         env:
+            SUPER_SECRET: ${{ secrets.SECRET }}
+            HOST: ${{ secrets.HOSTNAME }}
+         run: |
+            echo "$SUPER_SECRET"
+            echo "$HOST"
+
