@@ -1,16 +1,13 @@
-name: running from ac.yml file
+name: ACCESS SERVER 
 run-name: connecting to AWS !!!
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - uses: appleboy/ssh-action@v0.1.4
         with:
           host: 15.206.70.247
           key: ${{ secrets.PRIVATE_KEY }}
           username: ubuntu
-
-          script: |
-            echo "HAMCKINGGG bamxiii" > rem.txt
+          script: echo "HAMCKINGGG bamxiii" > rem.txt
