@@ -1,8 +1,6 @@
 name: new dirr
 run-name: waapsss
-on:
-  push:
-    [main]
+on: [push]
 jobs:
   naya_job:
     runs-on: ubuntu-latest
