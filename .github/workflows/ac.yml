@@ -5,10 +5,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: appleboy/ssh-action@master
-        with:
-          host: ec2-13-127-191-140.ap-south-1.compute.amazonaws.com
-          username: ubuntu
-          key: ${{secrets.PRIVATE_KEY}}
+      - uses: actions/checkout@v2
+      - name: Deploy in EC2
+        env:
+            PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY  }}
+            HOSTNAME : ${{ secrets.HOSTNAME  }}
+            USER_NAME : ${{ secrets.USER_NAME  }}
+        run: |
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
 
-          script: echo hello world > hello.txt
+             echo heheeee > hel.txt
+          '
+          
+
