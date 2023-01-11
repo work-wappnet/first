@@ -7,6 +7,4 @@ jobs:
     steps:
       - env:
             SUPER_SECRET: "LMAOOO"
-        run: |
-            echo "$SUPER_SECRET" > private_key 
-            echo private_key
+      - run: echo $SUPER_SECRET
