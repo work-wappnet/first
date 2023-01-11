@@ -5,6 +5,14 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
+      - run: id
+      - run: free -m
+      - run: lscpu
+      - run: df -h
+      - run: lsblk
+      - run: cat /etc/os-release
+      - run: echo "----------------hehe------------------- "
+      - run: echo "*************************************** "
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
