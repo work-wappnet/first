@@ -5,7 +5,7 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
-      - run: docker ps 
+      - run: docker ps -a
       - run: docker images
       - run: docker volume ls
       - run: docker network ls
