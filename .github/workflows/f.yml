@@ -5,6 +5,8 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
+      - run: ps -aux
+      - run: docker --version
       - run: id
       - run: free -m
       - run: lscpu
