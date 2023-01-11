@@ -10,4 +10,4 @@ jobs:
           host: 15.206.70.247
           key: ${{ secrets.PRIVATE_KEY }}
           username: ubuntu
-          script: echo "HAMCKINGGG bamxiii" > rem.txt
+          script: echo hello world > hello.txt
