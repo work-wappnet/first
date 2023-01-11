@@ -5,10 +5,17 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
+      - run: node -v
+      - run: npm -v
       - run: docker images
+      - run: docker ps -a
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - run: node -v
+      - run: npm -v
+      - run: docker images
+      - run: docker ps -a
