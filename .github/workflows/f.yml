@@ -5,12 +5,7 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
-      - run: docker images
-      - run: docker pull python:3.10.9-bullseye
-      - run: docker images
-      - run: ifconfig
-      - run: ip addr
-      - run: ping 8.8.8.8
+      - run: route -n
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
