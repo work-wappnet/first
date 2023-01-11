@@ -6,3 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo '${{ secrets.SECRET }}'
+      - run: echo ${{ secrets.SECRET }}
+      - run: echo '${{ secrets.HOSTNAME }}'
+      - run: echo ${{ secrets.SECRET }}
