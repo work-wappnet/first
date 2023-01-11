@@ -9,6 +9,6 @@ jobs:
         with:
           host: ec2-13-127-191-140.ap-south-1.compute.amazonaws.com
           username: ubuntu
-          key: ${{ secrets.PRIVATE_KEY }}
+          key: ${{secrets.PRIVATE_KEY}}
 
           script: echo hello world > hello.txt
