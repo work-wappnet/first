@@ -10,5 +10,5 @@ jobs:
           host: 13.127.191.140
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
-          port: 22
+
           script: echo hello world > hello.txt
