@@ -5,7 +5,10 @@ jobs:
   checkingggg-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hehe"
+      - name: running echo hehe only
+        run: echo "hehe"
+      - name: running Docker images Command 
+        run: docker images
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
