@@ -5,9 +5,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: copy private key
-        run: echo ${{ secrets.AWS_PRIVATE_KEY  }} > private_key && chmod 600 private_key
-      - run: cat private_key
-          
-
+      - run: echo ${{ secrets.SECRET }}
