@@ -6,7 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: running echoo
-        run: echo "HeHe"
-      - name: print working directory
-        run: pwd
+        run: echo "new directory  "
 
