@@ -1,8 +1,8 @@
 name: pehla action
-run-name: ${{ github.actor }} is doing actionsss !!1
+run-name: ${{ github.actor }} is doing actionsss !!
 on: [push]
 jobs:
-  check-bats-version:
+  checkingggg-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
